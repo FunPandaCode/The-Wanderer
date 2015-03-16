@@ -63,6 +63,7 @@ module.exports = {
      */
     libs_files: {
         js: [
+            'libs/phaser/build/custom/phaser-arcade-physics.js',
             'libs/ionic/js/ionic.bundle.js'
         ],
         css: [

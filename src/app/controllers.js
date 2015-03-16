@@ -1,6 +1,11 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['app.Game'])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope, Game) {
+    if(!Game.isGameRunning) {
+        console.log('start game');
+        Game.startGame();
+    }
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();

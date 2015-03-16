@@ -15,6 +15,7 @@ module.exports = {
             '<%= libs_files.js %>',
             '<%= libs_files.css %>',
             '<%= build_dir %>/src/app/*.js',
+            '<%= build_dir %>/src/app/game/**/*.js',
             '<%= html2js.app.dest %>',
             '<%= html2js.common.dest %>',
             '<%= build_dir %>/src/common/**/*.js',

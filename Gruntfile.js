@@ -44,7 +44,7 @@ module.exports = function(grunt) {
      * before watching for changes.
      */
     grunt.renameTask( 'watch', 'watcher' );
-    grunt.registerTask( 'watch', [ 'build', 'karma:unit', 'watcher' ] );
+    grunt.registerTask( 'watch', [ 'build', 'watcher' ] );
 
 
     /**
